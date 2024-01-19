@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salvar o Mundo</title>
+
+     <!-- Site Logo -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/SiteLogo.png" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    
+    <!-- CSS e JS -->
+    <script src="JS/Time.js" defer></script>
+    <link rel="stylesheet" href="CSS/Style.css"/>
+    
+</head>
+<body>
+<!--- NavBar -->
+<nav class="NavBar">
+  <div class="brand">
+    <img src="img/SiteLogo.png" class="Nav-Img" alt="Logo"/>
+    <h1 class="Nav-Title">Salvar o Mundo</h1>
+  </div>
+
+  <ul class="Nav-FullDiv">
+    <li class="Nav-Divisions"><a class="Nav-text" href="index.html">Inicio</a></li>
+    <li class="Nav-Divisions"><a class="Nav-text" href="noticias.html">Noticias</a></li>
+    <li class="Nav-Divisions"><a class="Nav-text" href="forum.html">Forum</a></li>
+    <li class="Nav-Divisions"><a class="Nav-text" href="equipa.html">Equipa</a></li>
+  </ul>
+</nav>
+  
+  <!--div inicial das Noticias-->
+  <div class="ImgNoticias-container">
+    <img class="ImgNoticias" src="img/naturezaBG.jpg" alt="IndexIMG" />
+    <div class="TextNoticias-overlay">
+      <h1 class="TextNoticias-Slogan">Notícias</h1>
+      
+    </div>
+  </div>
+
+  <div class="NoticiasMenu">
+    <div class="Pesquisa">
+      <label>Tags de Noticias:</label>
+      <div class="tag" id="Ambiente" onclick="filterNews('Reciclagem')">Reciclagem</div>
+      <div class="tag" id="Oceano" onclick="filterNews('Oceano')">Oceano</div>
+      <div class="tag" id="Planta" onclick="filterNews('Animais em Extinção')">Animais em Extinção</div>
+      <div class="tag" id="AquecimentoGlobal" onclick="filterNews('Aquecimento Global')">Aquecimento Global</div>
+    </div>
+
+    <div class="Container-Cards-Noticias" id="newsContainer"></div>
+  </div>
+
+  <script src="JS/NewsAPIGlobal.js"></script>
+</div>
+
+ <!-- Credit div -->
+ <footer class="endcreditsplace">
+  <p>&copy; 2023 Salvar o Mundo. All rights reserved.</p> <p id="datetime"></p>
+</footer>
+
+
+</body>
+</html>

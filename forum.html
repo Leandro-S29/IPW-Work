@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>                                  
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Salvar o Mundo</title>
+
+     <!-- Site Logo -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/SiteLogo.png"/>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/5a21bb91bb.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS e JS -->
+    <script src="JS/Forum.js"></script>
+    <script src="JS/Time.js" defer></script>
+    <link rel="stylesheet" href="CSS/Style.css"/>
+
+  </head>
+  
+  <body>
+    
+    <!--- NavBar -->
+    <nav class="NavBar">
+      <div class="brand">
+        <img src="img/SiteLogo.png" class="Nav-Img" alt="Logo"/>
+        <h1 class="Nav-Title">Salvar o Mundo</h1>
+      </div>
+      <ul class="Nav-FullDiv">
+        <li class="Nav-Divisions"><a class="Nav-text" href="index.html">Inicio</a></li>
+        <li class="Nav-Divisions"><a class="Nav-text" href="noticias.html">Noticias</a></li>
+        <li class="Nav-Divisions"><a class="Nav-text" href="forum.html">Forum</a></li>
+        <li class="Nav-Divisions"><a class="Nav-text" href="equipa.html">Equipa</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <!--div inicial-->
+    <div class="ImgAboutUs-container">
+      <img class="ImgAboutUS" src="img/ForumBG.jpg" alt="IndexIMG"/>
+      <div class="TextAboutUS-overlay">
+        <h1 class="TextAboutUS-Slogan">Forúm</h1>
+      </div>
+    </div>
+
+    <!--Forum-->
+
+    <div class="container">
+      <div class="ForumB">
+        <div class="top-bar">
+          <h10>
+            Post's Da Comunidade:
+          </h10>
+        </div>
+      <ol>
+        
+      </ol>
+      <script>
+        console.log(threads);
+        var container = document.querySelector('ol');
+        for(let thread of threads) {
+          var html = `
+          <li class="row">
+              <a href="/post.html?${thread.id}">
+                <h8 class="title">
+                  ${thread.title}
+                </h8>
+                <div class="bottom">
+                  <p class="timestamp">
+                    ${new Date(thread.date).toLocaleDateString()}
+                  </p>
+                  <p class="comment-count">
+                    ${thread.comments.length} comentarios
+                  </p>
+                </div>
+              </a>
+            </li>
+          `
+          container.insertAdjacentHTML('beforeend', html);
+        }
+    
+      </script>
+     </div>
+    </div>
+    <!-- Credit div -->
+    <footer class="endcreditsplace">
+      <p>&copy; 2023 Salvar o Mundo. All rights reserved.</p> <p id="datetime"></p>
+    </footer>
+  
+  </body>

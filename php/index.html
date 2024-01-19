@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Salvar o Mundo</title>
+
+     <!-- Site Logo -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/SiteLogo.png"/>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://kit.fontawesome.com/5a21bb91bb.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS e JS -->
+    <script src="JS/Time.js" defer></script>
+    <script src="JS/SelectionIndex.js" defer></script>
+    <link rel="stylesheet" href="CSS/Style.css"/>
+
+  </head>
+  <body>
+
+    <!--- NavBar -->
+    <nav class="NavBar">
+      <div class="brand">
+        <img src="img/SiteLogo.png" class="Nav-Img" alt="Logo"/>
+        <h1 class="Nav-Title">Salvar o Mundo</h1>
+      </div>
+      <ul class="Nav-FullDiv">
+        <li class="Nav-Divisions"><a class="Nav-text" href="index.html">Inicio</a></li>
+        <li class="Nav-Divisions"><a class="Nav-text" href="noticias.html">Noticias</a></li>
+        <li class="Nav-Divisions"><a class="Nav-text" href="forum.html">Forum</a></li>
+        <li class="Nav-Divisions"><a class="Nav-text" href="equipa.html">Equipa</a></li>
+      </ul>
+    </nav>
+    
+
+    <!--- Div inicial -->
+
+    <div class="ImgAboutUs-container">
+      <img class="ImgAboutUS" src="img/IntroImg.jpg" alt="IndexIMG"/>
+      <div class="TextAboutUS-overlay">
+        <h1 class="TextAboutUS-Slogan">Juntos, por um futuro verde.</h1>
+        <div class="TextAboutUS-Div">
+          <span class="TextAboutUS-Base">Este site foi criado para inspirar ações sustentáveis e
+            conscientizar sobre a urgência da preservação ambiental.</span>
+          <br/>
+          <br/>
+          <span class="TextAboutUS-Base">Oferecemos recursos informativos, notícias e uma comunidade anonima
+            interessadas em mudanças positivas para um planeta saudável.</span>
+        </div>
+      </div>
+    </div>
+
+        
+<!--div inicial dos nossos projetos-->
+  
+ 
+    <div class="container_DivProject">
+    <span class="Start-titles1">Nossos Projetos</span>
+    <div class="container-project">
+  
+    <div class="card-Project">
+    <i class="fa-solid fa-trash"></i>
+    <h2>Apanhar Lixo</h2>
+    <p>Na operaçao salvar o mundo vamos para as praias, florestas e mesmo na cidade apanhar lixo.<br><br>
+      Se estas interessado a tirar este peso do mundo junta te a nós!</p>
+      <a href="index.html#Voluntaria"><button class="projectbutton1" onclick="genarateprojeto1()">Quero Voluntariar-me</button></a>
+    </div>
+    
+  <div class="card-Project">
+    <i class="fa-solid fa-tree"></i>
+    <h2>Plantar árvores</h2>
+    <p>Na operaçao Plantar árvores percoremos a cidade ou zonas que sofreram desflorestaçao<br><br>
+      Se estas interessado a ajudar o planeta respirar junta te a nós!</p>
+      <a href="index.html#Voluntaria"><button class="projectbutton2" onclick="genarateprojeto2()">Quero Voluntariar-me</button></a>
+  </div>
+    
+  <div class="card-Project">
+    <i class="fa-solid fa-recycle"></i>
+    <h2>Conhecimento da Reciclagem</h2>
+    <p>Na operaçao Conhecimento da reciclagem percoremos escolas e estabelecimentos de ensino. </br><br>
+    Para sensibilizar os alunos no topico da reciclagem.</p>
+    <a href="index.html#Voluntaria"><button class="projectbutton3" onclick="genarateprojeto3()">Quero Voluntariar-me</button></a>
+  </div>
+  </div>
+  </div>
+    <!--Calculadora de Pegada-->
+  
+
+    <!--voluntaria te-->
+    <div class="formcont-project">
+        <div class="form-Project">
+          <h1 class="TextProjetos-subtitulo" id="Voluntaria"> VOLUNTARIA-TE!!  <i class="fa-solid fa-envelope"></i></h1>
+        </div>
+        <div class="form-Project">
+          <div>
+          <div class="Textprojetos-container">
+          <div class="voluntaria-form">
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="name">Teu Nome:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Teu Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="projeto">Projeto:</label>
+                <input type="text" id="projeto" name="projeto" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Observações:</label>
+                <textarea  id="observacoes" name="message" rows="4"> </textarea>
+              </div>
+              <div class="form-group">
+               <br> <button type="submit" name="send">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+
+    
+
+    <!-- Credit div -->
+    <footer class="endcreditsplace">
+      <p>&copy; 2023 Salvar o Mundo. All rights reserved.</p> <p id="datetime"></p>
+    </footer>
+  </body>
+</html>
